@@ -1,21 +1,18 @@
 {
   "private": true,
-  "name": "@harvardchanschool/canvas-branding-hsph",
-  "description": "Custom Canvas Branding code for HSPH",
-  "version": "1.0.0",
-  "directories": {
-    "test": "tests"
-  },
+  "name": "@harvardchanschool/canvas-theme",
+  "description": "Scripts and styles for the Harvard School of Public Health Canvas theme.",
+  "version": "1.2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HarvardChanSchool/canvas-branding-hsph.git"
+    "url": "git+https://github.com/HarvardChanSchool/canvas-theme.git"
   },
-  "author": "HSPH Webteam",
-  "license": "unlicenced",
-  "homepage": "https://hsph.harvard.edu/information-technology/",
+  "author": "SPH Web and Applications Team",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HarvardChanSchool/canvas-branding-hsph/issues"
+    "url": "https://hsph-it.atlassian.net/"
   },
+  "homepage": "https://github.com/HarvardChanSchool/canvas-theme#readme",
   "main": "webpack.config.js",
   "keywords": [],
   "dependencies": {
