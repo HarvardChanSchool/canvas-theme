@@ -1,5 +1,8 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
+const ESLintPlugin = require('eslint-webpack-plugin');
+
+require('laravel-mix-polyfill');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -18,18 +21,7 @@ mix.autoload({
 });
 
 mix.webpackConfig({
-    module: {
-        rules: [
-            {
-                enforce: 'pre',
-                test: /\.js$/,
-                loader: 'eslint-loader',
-                options: {
-                    fix: true
-                }
-            }
-        ]
-    }
+    plugins: [new ESLintPlugin({ fix: true })]
 });
 
 // Combine and minify JavaScript
@@ -45,10 +37,10 @@ mix.js([
 // Extract vendor modules into vendor.js
 mix.extract(['jquery', 'jquery-ui']);
 
-// Running babel for old browser support
-mix.babel('public/js/manifest.js', 'public/js/manifest.js');
-mix.babel('public/js/vendor.js', 'public/js/vendor.js');
-mix.babel('public/js/app.js', 'public/js/app.js');
+// Running polyfills for old browser support
+mix.polyfill({
+    targets: "firefox 50, IE 11"
+ });
 
 // Only bother versioning in production
 if (mix.inProduction()) {
