@@ -18,13 +18,13 @@ function hsphloadScript(src) {
 }
 
 if( window.location.href.indexOf( 'harvard.test.instructure.com' ) > -1 ) {
-	hsphloadScript( 'https://content.sph.harvard.edu/it/canvas-theme/dev/manifest.js' );
-	hsphloadScript( 'https://content.sph.harvard.edu/it/canvas-theme/dev/vendor.js' );
-	hsphloadScript( 'https://content.sph.harvard.edu/it/canvas-theme/dev/app.js' );
+	hsphloadScript( 'https://content.sph.harvard.edu/it/canvas-theme/dev/js/manifest.js' );
+	hsphloadScript( 'https://content.sph.harvard.edu/it/canvas-theme/dev/js/vendor.js' );
+	hsphloadScript( 'https://content.sph.harvard.edu/it/canvas-theme/dev/js/app.js' );
 } else {
-	hsphloadScript( 'https://content.sph.harvard.edu/it/canvas-theme/prod/manifest.js' );
-	hsphloadScript( 'https://content.sph.harvard.edu/it/canvas-theme/prod/vendor.js' );
-	hsphloadScript( 'https://content.sph.harvard.edu/it/canvas-theme/prod/app.js' );
+	hsphloadScript( 'https://content.sph.harvard.edu/it/canvas-theme/prod/js/manifest.js' );
+	hsphloadScript( 'https://content.sph.harvard.edu/it/canvas-theme/prod/js/vendor.js' );
+	hsphloadScript( 'https://content.sph.harvard.edu/it/canvas-theme/prod/js/app.js' );
 }
 
 // add the akltura script to the head of our document.
