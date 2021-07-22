@@ -24,6 +24,9 @@ mix.webpackConfig({
     plugins: [new ESLintPlugin({ fix: true })]
 });
 
+// Compiling SASS into CSS
+mix.sass('sass/app.scss', 'public/css');
+
 // Combine and minify JavaScript
 mix.js([
     'node_modules/jquery/dist/jquery.js',

@@ -23,7 +23,10 @@
     "eslint": "^7.30.0",
     "eslint-webpack-plugin": "^2.5.4",
     "laravel-mix": "^6.0.25",
-    "laravel-mix-polyfill": "^3.0.1"
+    "laravel-mix-polyfill": "^3.0.1",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0"
   },
   "scripts": {
     "development": "mix",

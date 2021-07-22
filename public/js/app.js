@@ -162,6 +162,19 @@ function hsphCanvasTabs() {
 
 hsphCanvasTabs();
 
+/***/ }),
+
+/***/ "./sass/app.scss":
+/*!***********************!*\
+  !*** ./sass/app.scss ***!
+  \***********************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
 /***/ })
 
 },
@@ -169,7 +182,7 @@ hsphCanvasTabs();
 /******/ "use strict";
 /******/ 
 /******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-/******/ __webpack_require__.O(0, ["/public/js/vendor"], function() { return __webpack_exec__("./node_modules/jquery/dist/jquery.js"), __webpack_exec__("./node_modules/jquery-ui/ui/widgets/tabs.js"), __webpack_exec__("./js/google.js"), __webpack_exec__("./js/kalturathreeplay.js"), __webpack_exec__("./js/blue-explorance.js"), __webpack_exec__("./js/uitabs.js"); });
+/******/ __webpack_require__.O(0, ["public/css/app","/public/js/vendor"], function() { return __webpack_exec__("./node_modules/jquery/dist/jquery.js"), __webpack_exec__("./node_modules/jquery-ui/ui/widgets/tabs.js"), __webpack_exec__("./js/google.js"), __webpack_exec__("./js/kalturathreeplay.js"), __webpack_exec__("./js/blue-explorance.js"), __webpack_exec__("./js/uitabs.js"), __webpack_exec__("./sass/app.scss"); });
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
