@@ -26,7 +26,7 @@ function hsphloadScript(src) {
 	var s = document.createElement('link');
 	s.type = 'text/css';
 	s.rel = 'stylesheet';
-	s.src = src;
+	s.href = src;
 	document.getElementsByTagName('head')[0].appendChild(s);
 }
 
