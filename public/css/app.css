@@ -76,3 +76,10 @@
   background-image: linear-gradient(to bottom, #6e9eaf 0%, #587e8c 100%);
   /* W3C */
 }
+
+/** Styles to improve the "People" tab in courses **/
+body.people [id^=user-avatar-people-page] span {
+  background-size: 100px;
+  width: 100px;
+  height: 100px;
+}
