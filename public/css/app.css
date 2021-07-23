@@ -86,9 +86,9 @@ body.people [id^=user-avatar-people-page] span {
 
 @media print {
   body.people .roster td:nth-child(3),
-body.people .rosterUser th:nth-child(3),
-body.people .rosterUser td:nth-child(4),
-body.people .rosterUser th:nth-child(4) {
+body.people .roster th:nth-child(3),
+body.people .roster td:nth-child(4),
+body.people .roster th:nth-child(4) {
     display: none;
   }
 
