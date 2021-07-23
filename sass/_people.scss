@@ -5,3 +5,17 @@ body.people [id^="user-avatar-people-page"] span {
     width: 100px;
     height: 100px;
 }
+
+@media print {
+    // When printing hide HUIDS
+    body.people .roster td:nth-child(3), 
+    body.people .rosterUser th:nth-child(3), 
+    body.people .rosterUser td:nth-child(4), 
+    body.people .rosterUser th:nth-child(4) {
+        display: none;
+    }
+    // When printing show pictures
+    body.people [id^="user-avatar-people-page"] img{
+        display: block;
+      }
+}
