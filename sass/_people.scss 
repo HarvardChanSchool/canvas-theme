@@ -1,0 +1,7 @@
+/** Styles to improve the "People" tab in courses **/
+
+body.people [id^="user-avatar-people-page"] span {
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+}
