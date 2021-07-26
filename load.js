@@ -41,7 +41,7 @@ if( window.location.href.indexOf( 'harvard.test.instructure.com' ) > -1 ) {
 	// Load prod JS
 	hsphloadScript( 'https://content.sph.harvard.edu/it/canvas-theme/prod/js/manifest.js' );
 	hsphloadScript( 'https://content.sph.harvard.edu/it/canvas-theme/prod/js/vendor.js' );
-	hsphloadStylesheet( 'https://content.sph.harvard.edu/it/canvas-theme/prod/js/app.js' );
+	hsphloadScript( 'https://content.sph.harvard.edu/it/canvas-theme/prod/js/app.js' );
 	// Load prod CSS
 	hsphloadStylesheet( 'https://content.sph.harvard.edu/it/canvas-theme/prod/css/app.css' );
 }
