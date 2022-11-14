@@ -31,7 +31,6 @@ mix.sass('sass/app.scss', 'public/css');
 mix.js([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/jquery-ui/ui/widgets/tabs.js',
-    'load.js',
     'js/google.js',
     'js/kalturathreeplay.js',
     'js/blue-explorance.js',
