@@ -5,15 +5,12 @@ function hsphKalturaThreePlay() {
         
         // Check to see whether the kaltura-threeplay div exists yet; if not, stall for 3 seconds.
         if( $(".kaltura-threeplay").length == 0 ) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-            setTimeout(function() {
-                console.log('kaltura-threeplay div not found; wait 3 seconds');    
+            setTimeout(function() {   
                 if( window.location.href.indexOf( 'harvard.test.instructure.com' ) > -1 ) {
                     $.getScript('https://content.sph.harvard.edu/it/canvas-theme/dev/js/manifest.js').done(function() {
-                        console.log('run manifest dev');
                     })
                 } else {
                     $.getScript('https://content.sph.harvard.edu/it/canvas-theme/prod/js/manifest.js').done(function() {
-                        console.log('run manifest prod');
                     })
                 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
             }, 3000);
