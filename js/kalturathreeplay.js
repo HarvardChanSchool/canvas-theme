@@ -2,6 +2,18 @@ function hsphKalturaThreePlay() {
     // Check that we are ready to go.
     jQuery( document ).ready(function($) {
         // Jquery has been loaded so we can now use it.
+        
+        // Check to see whether the kaltura-threeplay div exists yet; if not, stall for 3 seconds.
+        if( $(".kaltura-threeplay").length == 0 ) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+            setTimeout(function() {   
+                if( window.location.href.indexOf( 'harvard.test.instructure.com' ) > -1 ) {
+                    $.getScript('https://content.sph.harvard.edu/it/canvas-theme/dev/js/manifest.js');
+                } else {
+                    $.getScript('https://content.sph.harvard.edu/it/canvas-theme/prod/js/manifest.js');
+                }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+            }, 3000);
+        }   
+
         $( '.kaltura-threeplay' ).each(function( index ) {
 
             // lets see if we have a kaltura attribute
