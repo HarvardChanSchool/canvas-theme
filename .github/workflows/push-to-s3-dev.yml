@@ -28,7 +28,7 @@ jobs:
 
     - name: Deploy static assets to S3 bucket
       run: |
-        aws s3 sync ./public s3://hsph-content/it/canvas-theme/dev  --delete
+        aws s3 sync ./public s3://sph-content-prod-bucket/it/canvas-theme/dev  --delete
     
     - name: Invalidate cache in AWS CloudFront
       run: |
